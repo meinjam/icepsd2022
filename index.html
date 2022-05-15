@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Aeolus HTML Template</title>
+
+    <!-- ////////////////////////////////// -->
+    <!-- //      Stylesheets Files       // -->
+    <!-- ////////////////////////////////// -->
+    <link rel="stylesheet" href="css/base.css" id="camera-css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/noscript.css" media="screen,all" id="noscript" />
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!-- ////////////////////////////////// -->
+    <!-- //     Google Webfont Files     // -->
+    <!-- ////////////////////////////////// -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400" />
+
+    <!-- ////////////////////////////////// -->
+    <!-- //        Favicon Files         // -->
+    <!-- ////////////////////////////////// -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!-- ////////////////////////////////// -->
+    <!-- //      Javascript Files        // -->
+    <!-- ////////////////////////////////// -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/jquery.easing-1.3.min.js"></script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/tinynav.min.js"></script>
+    <script src="js/camera.min.js"></script>
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <script src="js/jquery.fancybox.js?v=2.0.6"></script>
+    <script src="js/jquery.fancybox-media.js?v=1.0.3"></script>
+    <script src="js/jquery.ui.totop.min.js"></script>
+    <script src="js/ddaccordion.js"></script>
+    <script src="js/jquery.twitter.js"></script>
+    <script src="js/faq-functions.js"></script>
+    <script src="js/theme-functions.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Camera Jquery
+            $('#camera-slide').camera({
+                thumbnails: false,
+                hover: false,
+                fx: 'fade',
+                time: 7000,
+                transPeriod: 500,
+                pagination: false,
+            });
+        });
+    </script>
+
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+
+<body>
+
+    <div id="main-wrapper">
+
+        <!-- header start here -->
+        <header>
+            <div id="top_wrapper">
+                <div class="row">
+                    <div class="four column logo">
+                        <a href="index.html">
+                            <!-- <img src="images/logo.png" alt="mainlogo"/> -->
+                            <h1 class="nav-logo">
+                                ICEPSD
+                            </h1>
+                        </a>
+                    </div>
+                    <div class="eight column top_search">
+                        <form id="search" action="#" method="get">
+                            <fieldset class="search-fieldset">
+                                <button type="submit" value="Submit">Submit</button>
+                                <input type="text" id="search-form" value="search..."
+                                    onblur="if (this.value == ''){this.value = 'search...'; }"
+                                    onfocus="if (this.value == 'search...') {this.value = ''; }" />
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mainmenu_wrapper">
+                <!-- mainmenu start here -->
+                <nav id="mainmenu">
+                    <ul id="menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="about.html">About</a>
+                            <ul>
+                                <li><a href="about.html"><span>-</span>About</a></li>
+                                <li><a href="members.html"><span>-</span>Members</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Signup</a></li>
+
+                        <!-- <li class="dropdown"><a href="#">Pages</a>
+                                <ul> 
+                                    <li><a href="column.html"><span>-</span> column page</a></li>
+                                    <li><a href="tables.html"><span>-</span> table page</a></li>
+                                    <li><a href="button-list.html"><span>-</span> button &amp; list page</a></li>
+                                    <li><a href="typhography.html"><span>-</span> typhography page</a></li>
+                                    <li><a href="testimonials.html"><span>-</span> testimonials page</a></li>  
+                                    <li><a href="pricing.html"><span>-</span> pricing page</a></li>
+                                    <li><a href="faq.html"><span>-</span> faq page</a></li>
+                                    <li><a href="single.html"><span>-</span> single page</a></li>  
+                                    <li><a href="fullwidth.html"><span>-</span> fullwidth page</a></li>
+                                    <li><a href="404.html"><span>-</span> 404 page</a></li>                           	
+                                </ul>
+                            </li> -->
+                    </ul>
+                </nav>
+                <!-- mainmenu end here -->
+
+                <!-- top socials start here -->
+                <div id="top-socials">
+                    <ul class="socials-list">
+                        <li><a href="#" title="facebook" class="tooltip"><img src="images/socials/facebook.gif"
+                                    alt="" /></a></li>
+                        <li><a href="#" title="twitter" class="tooltip"><img src="images/socials/twitter.gif"
+                                    alt="" /></a></li>
+                        <li><a href="#" title="linkedin" class="tooltip"><img src="images/socials/linkedin.gif"
+                                    alt="" /></a></li>
+                        <li><a href="#" title="youtube" class="tooltip"><img src="images/socials/youtube.gif"
+                                    alt="" /></a></li>
+                    </ul>
+                </div>
+                <!-- top socials end here -->
+            </div>
+        </header>
+        <!-- header end here -->
+
+        <!-- slideshow start here -->
+        <section id="slideshow-wrapper">
+            <div class="camera_wrap" id="camera-slide">
+
+                <!-- slide 1 here -->
+                <div data-src="images/slideshow/bg_metro_blue.jpg">
+                    <div class="caption-image-left moveFromBottom">
+                        <img src="images/slideshow/slide1.png" alt="" />
+                    </div>
+                    <div class="caption-text-right moveFromTop">
+                        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                        <!-- <p>Take the new experience with our phone</p> -->
+                        <p>Lorem ipsum dolor consectetur adipisicing elite sedore eiusmod tempor incididunt ut labore
+                            dolore reprehenderit dolore magna exercitation ullam</p>
+                        <a href="#" class="button large white">Register</a>
+                    </div>
+                </div>
+
+                <!-- slide 2 here -->
+                <div data-src="images/slideshow/bg_metro_green.jpg">
+                    <div class="caption-text-left moveFromLeft">
+                        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                        <!-- <p>Take the new experience with our phone</p> -->
+                        <p>Lorem ipsum dolor consectetur adipisicing elite sedore eiusmod tempor incididunt ut labore
+                            dolore reprehenderit dolore magna exercitation ullam</p>
+                        <a href="#" class="button large white">Register</a>
+                    </div>
+                    <div class="caption-image-right moveFromRight">
+                        <img src="images/slideshow/slide2.png" alt="" />
+                    </div>
+                </div>
+
+                <!-- slide 3 here -->
+                <!-- <div data-src="images/slideshow/bg_metro_yellow.jpg">
+                        <div class="caption-text-center moveFromTop">
+                            <h1>Clean, Simple and Vibrant Color</h1>
+                            <p>Wah kayaknya kamu harus bilang wow! neh.</p>        
+                        </div>
+                        <div class="caption-image-center moveFromBottom">
+                            <img src="images/slideshow/slide3.png" alt="" />
+                        </div>                                
+                    </div> -->
+
+                <!-- slide 4 here -->
+                <!-- <div data-src="images/slideshow/bg_metro_purple.jpg">
+                        <div class="caption-image-left-people moveFromBottom">
+                            <img src="images/slideshow/slide4.png" alt="" />
+                        </div>
+                        <div class="caption-text-right moveFromTop">
+                            <h1>Say Hello to the new revolution of Smartphone</h1>
+                            <p>Take the new experience with our phone</p>
+                            <p>Lorem ipsum dolor consectetur adipisicing elite sedore eiusmod tempor incididunt ut labore dolore reprehenderit dolore magna exercitation ullam</p>
+                            <a href="#" class="button large white">Let's start something</a>            
+                        </div>                
+                    </div> -->
+            </div>
+            <div id="slideshow-noscript">
+                <h4>Hi, your javascript is off..!! for optimal results on this site please enable javascript in your
+                    browser</h4>
+            </div>
+
+            <div class="row homepage-steps">
+                <div class="twelve columns all">
+                    <a href="#" class="single">
+                        <h5>Call For Papers</h5>
+                    </a>
+                    <a href="#" class="single">
+                        <h5>Technical Program</h5>
+                    </a>
+                    <a href="#" class="single">
+                        <h5>Registration</h5>
+                    </a>
+                    <a href="#" class="single">
+                        <h5>Important Dates</h5>
+                    </a>
+                    <a href="#" class="single">
+                        <h5>Sponsor or Exhibit</h5>
+                    </a>
+                    <a href="#" class="single">
+                        <h5>Hotel Reservations</h5>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- slideshow end here -->
+
+        
+
+        <!-- content section start here -->
+        <section id="content-wrapper" class="home-members">
+
+            <div class="row">
+                <div class="four columns">
+                    <div class="box-grey">
+                        <img src="images/sample_images/dummy-profile-pic.jpg" alt="" class="metro-icon img-left" />
+                        <!-- <div class="clear"></div> -->
+                        <div>
+                            <h5>John Doe</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi suscipit repudiandae quo nemo cupiditate fugiat possimus, dolores esse! Quia quae fugiat illo voluptatibus iusto quisquam.</p>
+                            <a href="#" class="more-btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="box-grey">
+                        <img src="images/sample_images/dummy-profile-pic.jpg" alt="" class="metro-icon img-left" />
+                        <!-- <div class="clear"></div> -->
+                        <div>
+                            <h5>Katherine Langford</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium alias provident soluta rerum debitis nesciunt magnam expedita architecto autem? Eaque iusto eum totam suscipit blanditiis?</p>
+                            <a href="#" class="more-btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="box-grey">
+                        <img src="images/sample_images/dummy-profile-pic.jpg" alt="" class="metro-icon img-left" />
+                        <!-- <div class="clear"></div> -->
+                        <div>
+                            <h5>Adam Gilchrist</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi suscipit repudiandae quo nemo cupiditate fugiat possimus, dolores esse! Quia quae fugiat illo voluptatibus iusto quisquam.</p>
+                            <a href="#" class="more-btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="three columns">
+                    <h1>About Us</h1>
+                </div>
+                <div class="nine columns">
+                    <div class="front-desc">
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus blanditiis praesentium voluptatum
+                            deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                            non provident, similique sunt in culpa qui officia deserunt mollitia animi id est laborum et
+                            dolorum fuga harum quidem rerum facilis.</p>
+                    </div>
+                </div>
+
+                <div class="three columns">
+                    <h1>Why We</h1>
+                </div>
+                <div class="nine columns">
+                    <div class="front-desc">
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus quod
+                            maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus
+                            emporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut
+                            et voluptates repudiandae sint et molestiae.</p>
+                    </div>
+                </div>
+
+                <div class="three columns">
+                    <h1>About Us</h1>
+                </div>
+                <div class="nine columns">
+                    <div class="front-desc">
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem utenim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                            laboriosam nisi ut aliquid commodi consequatur.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h5 class="client-title">Sponsor</h5>
+                    <ul class="client-box">
+                        <li><img src="images/sample_images/client1.png" alt="" /></li>
+                        <li><img src="images/sample_images/client2.png" alt="" /></li>
+                        <li><img src="images/sample_images/client3.png" alt="" /></li>
+                        <li><img src="images/sample_images/client4.png" alt="" /></li>
+                        <li><img src="images/sample_images/client5.png" alt="" /></li>
+                        <li><img src="images/sample_images/client6.png" alt="" /></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="featured-box">
+                        <div class="nine columns">
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, est.</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos doloribus neque tenetur
+                                nostrum.</p>
+                        </div>
+                        <div class="three columns">
+                            <a href="#" class="button large blue">Get a Quote</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- content section end here -->
+
+        <!-- footer start here -->
+        <footer>
+            <div class="row">
+                <div class="three columns mobile-two">
+                    <ul class="footer-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="three columns mobile-two">
+                    <ul class="footer-list no-border">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="three columns mobile-two">
+                    <ul class="footer-list-address">
+                        <li>
+                            <p>72 Janata Housing, Ring road,<br /> Shyamoli, Dhaka - 1212.</p>
+                        </li>
+                        <li>
+                            <p>Phone : (880) 1685 970744</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="three columns">
+                    <div class="copyright">
+                        <div class="g-plusone" data-annotation="none" data-width="300"></div>
+                        <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+                        <p>&copy; Copyright 2022 ICEPSD<br />All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end here -->
+
+    </div>
+
+    <script>$('#noscript').remove();</script>
+</body>
+
+</html>

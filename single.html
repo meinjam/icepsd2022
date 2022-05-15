@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Aeolus HTML Template</title>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Stylesheets Files       // -->
+<!-- ////////////////////////////////// -->
+<link rel="stylesheet" href="css/base.css" id="camera-css"/>
+<link rel="stylesheet" href="css/framework.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/media.css"/>
+<link rel="stylesheet" href="css/noscript.css" media="screen,all" id="noscript"/>
+  
+<!-- ////////////////////////////////// -->
+<!-- //     Google Webfont Files     // -->
+<!-- ////////////////////////////////// -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //        Favicon Files         // -->
+<!-- ////////////////////////////////// -->
+<link rel="shortcut icon" href="images/favicon.ico"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/jquery.easing-1.3.min.js"></script>
+<script src="js/camera.min.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/tinynav.min.js"></script>
+<script src="js/jquery.mobile.customized.min.js"></script>
+<script src="js/jquery.fancybox.js?v=2.0.6"></script>
+<script src="js/jquery.fancybox-media.js?v=1.0.3"></script>
+<script src="js/jquery.ui.totop.min.js"></script>
+<script src="js/ddaccordion.js"></script>
+<script src="js/jquery.twitter.js"></script>
+<script src="js/faq-functions.js" ></script>
+<script src="js/theme-functions.js"></script>
+<script>
+$(document).ready(function() { 
+    //Camera Jquery
+    $('.post-slide').camera({		
+		thumbnails: false,
+		hover: false,
+		fx: 'random',
+		time: 7000,
+		transPeriod: 1500,
+		pagination: false
+    });
+});
+</script>
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+<body>
+
+<div id="main-wrapper">
+	
+    <!-- header start here -->
+	<header>
+    	<div id="top_wrapper">
+            <div class="row">
+                <div class="four column logo">
+                    <a href="index.html"><img src="images/logo.png" alt="mainlogo"/></a>
+                </div>
+                <div class="eight column top_search">
+                	<form id="search" action="#" method="get">
+                        <fieldset class="search-fieldset">
+                        	<button type="submit" value="Submit">Submit</button>
+                            <input type="text" id="search-form" value="search..." onblur="if (this.value == ''){this.value = 'search...'; }" onfocus="if (this.value == 'search...') {this.value = ''; }" />                            
+                        </fieldset>      						
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mainmenu_wrapper">
+        	<!-- mainmenu start here -->
+            <nav id="mainmenu">
+                <ul id="menu">
+                    <li class="dropdown"><a href="index.html">Home</a>
+                        <ul> 
+                            <li><a href="index-layout2.html"><span>-</span> home layout 2</a></li>
+                            <li><a href="index-layout3.html"><span>-</span> home layout 3</a></li>
+                            <li><a href="index-layout4.html"><span>-</span> home layout 4</a></li>    	
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="dropdown"><a href="#">Portfolio</a>
+                        <ul> 
+                            <li><a href="portfolio-2col.html"><span>-</span> portfolio 2 column</a></li>
+                            <li><a href="portfolio-3col.html"><span>-</span> portfolio 3 column</a></li>
+                            <li><a href="portfolio-4col.html"><span>-</span> portfolio 4 column</a>
+                            	<ul> 
+                                    <li><a href="#"><span>-</span> dropdown level 3</a></li>
+                                    <li><a href="#"><span>-</span> dropdown level 3</a></li>
+                                    <li><a href="#"><span>-</span> dropdown level 3</a></li>    	
+                                </ul>
+                            </li>    	
+                        </ul>
+                    </li>
+                    <li class="selected"><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown"><a href="#">Pages</a>
+                        <ul> 
+                            <li><a href="column.html"><span>-</span> column page</a></li>
+                            <li><a href="tables.html"><span>-</span> table page</a></li>
+                            <li><a href="button-list.html"><span>-</span> button &amp; list page</a></li>
+                            <li><a href="typhography.html"><span>-</span> typhography page</a></li>
+                            <li><a href="testimonials.html"><span>-</span> testimonials page</a></li>  
+                            <li><a href="pricing.html"><span>-</span> pricing page</a></li>
+                            <li><a href="faq.html"><span>-</span> faq page</a></li>
+                            <li><a href="single.html"><span>-</span> single page</a></li>  
+                            <li><a href="fullwidth.html"><span>-</span> fullwidth page</a></li>
+                            <li><a href="404.html"><span>-</span> 404 page</a></li>                           	
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- mainmenu end here -->
+            
+            <!-- top socials start here -->
+            <div id="top-socials">
+                <ul class="socials-list">
+                    <li><a href="#" title="facebook" class="tooltip"><img src="images/socials/facebook.gif" alt="" /></a></li>
+                    <li><a href="#" title="twitter" class="tooltip"><img src="images/socials/twitter.gif" alt="" /></a></li>
+                    <li><a href="#" title="rss" class="tooltip"><img src="images/socials/rss.gif" alt="" /></a></li>
+                    <li><a href="#" title="youtube" class="tooltip"><img src="images/socials/youtube.gif" alt="" /></a></li>
+                </ul>
+            </div>
+            <!-- top socials end here -->
+        </div>             
+    </header>
+    <!-- header end here -->
+    
+    <!-- pagetitle start here -->
+	<section id="pagetitle-wrapper">
+    	<div class="row">
+        	<div class="twelve columns">
+            	<h3>What's new.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+            </div>
+            <div class="twelve columns">
+            	<div id="breadcrumb">
+                	<ul>
+                        <li><a href="index.html"><img src="images/breadcrumb_home.png" alt="" /></a></li>
+                        <li class="current-page"><a href="#">blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>           
+    </section>
+    <!-- pagetitle end here -->
+    
+    <!-- content section start here -->
+    <section id="content-wrapper">
+    
+        <div class="row">
+            <div class="eight columns">            
+                <!-- blog post 1 -->
+                <div class="blog-post">
+                	<div class="row">
+                    
+                    	<div class="three columns">                                   	
+                            <div class="post-info">
+                            	<div class="post-date">
+                                	<img src="images/post_type_img.png" alt="" />
+                                	<p>Oct 29, 2012</p>
+                                </div>                                
+                                <ul>
+                                    <li class="author-icon"><a href="#">Don Kuzenko</a></li>                            
+                                    <li class="comment-icon"><a href="#">5 Comments</a></li>
+                                    <li class="tag-icon"><a href="#">Artistic</a>, <a href="#">Photography</a>, <a href="#">Elegant</a>, <a href="#">Classic</a></li>
+                                </ul>
+                                <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="indoneztheme">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                            </div>
+                        </div>
+                        
+                        <div class="nine columns">
+                            <div class="post-content">
+                                <h4><a href="single.html">Excepteur sint occaecat cupidatat non proident</a></h4>
+                                <div class="post-slide">
+                                    <div data-src="images/sample_images/blog-post1.jpg"></div>
+                                    <div data-src="images/sample_images/blog-post2.jpg"></div>
+                                </div>             
+                                <p>Nam libero tempore cum soluta nobis est eligendi optio cumque impedit minus quod maxime placeat facere possimus omnis voluptas assumend voluptatem quia voluptas sit aspernatur oditaut fugit seduia.</p>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt labore dolore magnam.</p>
+                                <blockquote>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                                </blockquote>
+                                <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                            </div>
+                        </div>               
+                        
+                    </div>   
+                </div>
+                
+                <div class="row">
+                	<div class="twelve columns">
+                    	<!--Begin sharing box-->
+                        <div class="sharing-box">
+                            <div class="share-facebook">
+                                <!--[if IE]>
+                                    <iframe id="facebookIframe-single" 
+                                        src="http://www.facebook.com/plugins/like.php?href=http://www.indonez.com/&amp;layout=standard&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light" 
+                                        style="border:none; overflow:hidden; width:300px; height:45px;" 
+                                        allowTransparency="true">
+                                    </iframe>
+                                <![endif]-->
+                                <!--[if !IE]>-->
+                                    <iframe id="facebookIframe-single" 
+                                        src="http://www.facebook.com/plugins/like.php?href=http://www.indonez.com/&amp;layout=standard&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light" 
+                                        style="border:none; overflow:hidden; width:300px; height:45px;" >
+                                    </iframe>
+                                <!--<![endif]-->
+                            </div>
+                                    
+                            <div class="share-social">
+                                <ul class="sharesocial-bloglist">
+                                    <li><a href="#" title="share with google+" class="tooltip"><img src="images/socials/googleplus.gif" alt="" /></a></li>
+                                    <li><a href="#" title="share with twitter" class="tooltip"><img src="images/socials/twitter.gif" alt="" /></a></li>
+                                    <li><a href="#" title="share with digg" class="tooltip"><img src="images/socials/digg.gif" alt="" /></a></li>
+                                    <li><a href="#" title="share with stumbleupon" class="tooltip"><img src="images/socials/stumbleupon.gif" alt="" /></a></li>
+                                    <li><a href="#" title="share with delicious" class="tooltip"><img src="images/socials/delicious.gif" alt="" /></a></li>
+                                    <li><a href="#" title="share with technorati" class="tooltip"><img src="images/socials/technorati.gif" alt="" /></a></li>
+                                    <li><a href="#" title="share with rss feed" class="tooltip"><img src="images/socials/rss.gif" alt="" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Begin of Comment -->
+                        <div id="comment">
+                            <h5>2 responses to "Reprehenderit voluptate essequam molestiae"</h5>
+                            <ol class="commentlist">
+                                <li>
+                                    <div class="avatar"><img src="images/sample_images/author.jpg" alt="" /></div>
+                                    <div class="comment-text" ><h5>John Doe</h5>
+                                    <small>April 28, 2010 01:23 am <a class="reply" href="#">Reply</a></small>
+                                    <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequ  vel illum qui dolorem eum fugiat quo voluptas nulla pariatur sunt in culpa qui officia deserunt mollit anim id est laborum adipisci velit.</p>                          
+                                    </div>
+                                    <ol>
+                                        <li>
+                                            <div class="avatar"><img src="images/sample_images/author.jpg" alt="" /></div>
+                                            <div class="comment-text" ><h5>Matt Somat</h5>
+                                            <small>April 28, 2010 01:23 am <a class="reply" href="#">Reply</a></small>
+                                            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequ  vel illum qui dolorem eum fugiat quo voluptas nulla pariatur sunt in culpa qui officia deserunt mollit anim.</p>                                    
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <div class="avatar"><img src="images/sample_images/author.jpg" alt="" /></div>
+                                    <div class="comment-text" ><h5>John Doe</h5>
+                                    <small>April 28, 2010 01:23 am <a class="reply" href="#">Reply</a></small>
+                                    <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequ  vel illum qui dolorem eum fugiat quo voluptas nulla pariatur sunt in culpa qui officia deserunt mollit anim id est laborum adipisci velit.</p>                          
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        
+                        <!-- Begin of Comment Form -->
+                        <div id="commentform-wrap">	
+                            <h5>Leave a comment</h5> 
+                            <form action="#" id="comment-form"> 
+                                <fieldset> 
+                                <label>Name <em>*</em></label>                           
+                                <input type="text" name="name" class="textfield" id="name" value="" /> 
+                                <label>E-mail <em>*</em></label> 
+                                <input type="text" name="email" class="textfield" id="email" value="" />                        
+                                <label>Subject</label>
+                                <input type="text" name="subject" class="textfield" id="subject" value="" /> 
+                                <textarea name="message" id="message" class="textarea" cols="2" rows="4"></textarea>
+                                <div class="clear"></div> 
+                                <label>&nbsp;</label>
+                                <input type="submit" name="submit" class="buttoncontact" id="buttonsend" value="Submit" />
+                                <span class="loading" style="display: none;">Please wait..</span>
+                                <div class="clear"></div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <!-- End of Comment Form -->
+                    </div>
+                </div>                   
+            </div>
+                    
+            <div class="four columns">         
+                <aside>
+                    <h5>Categories</h5>
+                    <ul class="sidebar-list">
+                        <li><a href="#">National News</a></li>                    
+                        <li><a href="#">World of Sport</a></li>                                
+                        <li><a href="#">Travel &amp; Accomodation</a></li>
+                        <li><a href="#">Technology News</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                    </ul>
+                </aside>
+                
+                <aside>
+                    <h5>Popular Post</h5>
+                    <ul class="popular-list">
+                        <li>
+                            <img src="images/sample_images/blog-post2.jpg" alt="" />                                                
+                            <p class="popular-title"><a href="single.html">Excepteur sint occaecat cupidatat non proident</a></p>                        
+                            <p class="comment-count"><a href="single.html">12 Comments</a></p>   
+                        </li>
+                        <li>
+                            <img src="images/sample_images/blog-post1.jpg" alt="" />                                                
+                            <p class="popular-title"><a href="single.html">Perspiciatis unde omnis error sit voluptatem</a></p>                        
+                            <p class="comment-count"><a href="single.html">8 Comments</a></p>        
+                        </li>
+                        <li>
+                            <img src="images/sample_images/blog-post3.jpg" alt="" />                                                
+                            <p class="popular-title"><a href="single.html">Quis autem velum reprehenderit qui voluptate</a></p>                        
+                            <p class="comment-count"><a href="single.html">5 Comments</a></p>         
+                        </li>                     
+                    </ul>
+                </aside>
+                
+                <aside>
+                    <h5>Tabs</h5>
+                    <ul class="tabs">
+                        <li><a href="#archives">Archives</a></li>
+                        <li><a href="#comments">Comments</a></li>
+                        <li><a href="#text">Text only</a></li>                 
+                    </ul>
+                    <div class="tab_container">
+                        <div id="archives" class="tab_content">                            
+                            <ul class="archive-list">
+                                <li><p class="month-arch"><a href="#">May 2012</a></p><p class="post-count"><a href="#">8 post</a></p></li>
+                                <li><p class="month-arch"><a href="#">June 2012</a></p><p class="post-count"><a href="#">12 post</a></p></li>
+                                <li><p class="month-arch"><a href="#">July 2012</a></p><p class="post-count"><a href="#">4 post</a></p></li>
+                                <li><p class="month-arch"><a href="#">August 2012</a></p><p class="post-count"><a href="#">10 post</a></p></li>
+                            </ul>                                  
+                        </div>
+                                                            
+                        <div id="comments" class="tab_content">                            
+                            <ul class="comments-list">
+                                <li>
+                                    <p class="comment-info">15 minutes ago by <a href="#">Jenglot</a> on</p>
+                                    <p class="title-with-comment"><a href="#">Architecto beatae vitare dictasunt explicabo</a></p>
+                                </li>
+                                <li>
+                                    <p class="comment-info">20 minutes ago by <a href="#">Markus</a> on</p>
+                                    <p class="title-with-comment"><a href="#">Exercitationem ullam corporisipi laboriosam</a></p>
+                                </li>
+                                <li>
+                                    <p class="comment-info">40 minutes ago by <a href="#">Andrew</a> on</p>
+                                    <p class="title-with-comment"><a href="#">Reprehenderit voluptate essequam molestiae</a></p>
+                                </li>
+                            </ul>                                   
+                        </div>
+                                                            
+                        <div id="text" class="tab_content">                     	                          
+                            <p>Lorem ipsum dolor amet, consectetur adipite scinelit vestibulum vel quam sitare amet odio ultricies dapbus acer vitae augue duis nulla nunc dignissim</p>                                                                 
+                        </div>                                                                  
+                    </div>
+                </aside>
+                
+                <aside>
+                    <h5>Tag Cloud</h5>
+                    <div class="tag-cloud">                        
+                        <a title="Link title" href="#">indonesia</a>
+                        <a title="Link title" href="#">jquery</a>
+                        <a title="Link title" href="#">design</a>
+                        <a title="Link title" href="#">responsive</a>
+                        <a title="Link title" href="#">themeforest</a>
+                        <a title="Link title" href="#">clean</a>
+                        <a title="Link title" href="#">minimalist</a>
+                        <a title="Link title" href="#">simple</a>                         
+                        <a title="Link title" href="#">css 3</a>
+                        <a title="Link title" href="#">camera slide</a>
+                        <a title="Link title" href="#">corporate</a>
+                        <a title="Link title" href="#">html 5</a>                                         
+                    </div>
+                </aside>
+            </div>
+        </div> 
+
+    </section>
+    <!-- content section end here -->
+    
+    <section id="bottom-wrap">
+    	<div class="row">
+        	<div class="twelve columns text-center">
+            	<img src="images/twitter-icon.png" alt="" />
+                <!-- Begin of Twitter Box -->
+                <ul id="twitter"></ul>
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+                    $.getJSON('twitter.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=Indoneztheme&count=1'), function(tweets){
+                        $("#twitter").html(tz_format_twitter(tweets));
+                    }); });
+                </script>
+                <!-- End of Twitter Box -->
+            </div>
+        </div>
+    </section>
+        
+    <!-- footer start here -->
+    <footer>
+    	<div class="row">
+        	<div class="two columns mobile-two">
+                <ul class="footer-list">
+                	<li><a href="#">Developers</a></li>
+                    <li><a href="#">Publisher</a></li>
+                    <li><a href="#">Advertisers</a></li>
+                    <li><a href="#">Internal</a></li>
+                </ul>
+            </div>
+            <div class="two columns mobile-two">
+                <ul class="footer-list no-border">
+                	<li><a href="#">About Us</a></li>
+                    <li><a href="#">Environment</a></li>
+                    <li><a href="#">Jobs (Hiring!)</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>             
+            </div>
+            <div class="two columns mobile-two">
+             	<ul class="footer-list">
+                	<li><a href="#">Press Kit</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Legal</a></li>
+                </ul>   
+            </div>
+            <div class="three columns mobile-two">
+             	<ul class="footer-list-address">
+                	<li><p>Cost Avenue. Silver Spring<br/>Jacko City, MD 20910, Indonesia</p></li>
+                    <li><p>Phone : (111) 234 5678</p></li>
+                </ul>   
+            </div>
+            <div class="three columns">
+            	<div class="copyright">
+                    <div class="g-plusone" data-annotation="none" data-width="300"></div><script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+                    <p>&copy; Copyright 2012 Aeolus Design<br/>All Rights Reserved</p>
+                </div>
+            </div>	
+        </div>
+    </footer>
+    <!-- footer end here -->
+
+</div>
+
+<script>$('#noscript').remove();</script>
+</body>
+</html>

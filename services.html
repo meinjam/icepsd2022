@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Aeolus HTML Template</title>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Stylesheets Files       // -->
+<!-- ////////////////////////////////// -->
+<link rel="stylesheet" href="css/base.css" id="camera-css"/>
+<link rel="stylesheet" href="css/framework.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/media.css"/>
+<link rel="stylesheet" href="css/noscript.css" media="screen,all" id="noscript"/>
+  
+<!-- ////////////////////////////////// -->
+<!-- //     Google Webfont Files     // -->
+<!-- ////////////////////////////////// -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //        Favicon Files         // -->
+<!-- ////////////////////////////////// -->
+<link rel="shortcut icon" href="images/favicon.ico"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/jquery.easing-1.3.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/tinynav.min.js"></script>
+<script src="js/jquery.mobile.customized.min.js"></script>
+<script src="js/jquery.fancybox.js?v=2.0.6"></script>
+<script src="js/jquery.fancybox-media.js?v=1.0.3"></script>
+<script src="js/jquery.ui.totop.min.js"></script>
+<script src="js/ddaccordion.js"></script>
+<script src="js/jquery.twitter.js"></script>
+<script src="js/faq-functions.js" ></script>
+<script src="js/theme-functions.js"></script>
+<script>
+$(window).load(function() {
+  $('.carousel-content').flexslider({
+	slideshow: false,
+	controlNav: false,
+    animation: "slide",
+	itemWidth: 150,
+    itemMargin: 0,
+    minItems: 2,
+    maxItems: 3
+  });
+});
+</script> 
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+<body>
+
+<div id="main-wrapper">
+	
+    <!-- header start here -->
+	<header>
+    	<div id="top_wrapper">
+            <div class="row">
+                <div class="four column logo">
+                    <a href="index.html"><img src="images/logo.png" alt="mainlogo"/></a>
+                </div>
+                <div class="eight column top_search">
+                	<form id="search" action="#" method="get">
+                        <fieldset class="search-fieldset">
+                        	<button type="submit" value="Submit">Submit</button>
+                            <input type="text" id="search-form" value="search..." onblur="if (this.value == ''){this.value = 'search...'; }" onfocus="if (this.value == 'search...') {this.value = ''; }" />                            
+                        </fieldset>      						
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mainmenu_wrapper">
+        	<!-- mainmenu start here -->
+            <nav id="mainmenu">
+                <ul id="menu">
+                    <li class="dropdown"><a href="index.html">Home</a>
+                        <ul> 
+                            <li><a href="index-layout2.html"><span>-</span> home layout 2</a></li>
+                            <li><a href="index-layout3.html"><span>-</span> home layout 3</a></li>
+                            <li><a href="index-layout4.html"><span>-</span> home layout 4</a></li>    	
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="selected"><a href="services.html">Services</a></li>
+                    <li class="dropdown"><a href="#">Portfolio</a>
+                        <ul> 
+                            <li><a href="portfolio-2col.html"><span>-</span> portfolio 2 column</a></li>
+                            <li><a href="portfolio-3col.html"><span>-</span> portfolio 3 column</a></li>
+                            <li><a href="portfolio-4col.html"><span>-</span> portfolio 4 column</a>
+                            	<ul> 
+                                    <li><a href="#"><span>-</span> dropdown level 3</a></li>
+                                    <li><a href="#"><span>-</span> dropdown level 3</a></li>
+                                    <li><a href="#"><span>-</span> dropdown level 3</a></li>    	
+                                </ul>
+                            </li>    	
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown"><a href="#">Pages</a>
+                        <ul> 
+                            <li><a href="column.html"><span>-</span> column page</a></li>
+                            <li><a href="tables.html"><span>-</span> table page</a></li>
+                            <li><a href="button-list.html"><span>-</span> button &amp; list page</a></li>
+                            <li><a href="typhography.html"><span>-</span> typhography page</a></li>
+                            <li><a href="testimonials.html"><span>-</span> testimonials page</a></li>  
+                            <li><a href="pricing.html"><span>-</span> pricing page</a></li>
+                            <li><a href="faq.html"><span>-</span> faq page</a></li>
+                            <li><a href="single.html"><span>-</span> single page</a></li>  
+                            <li><a href="fullwidth.html"><span>-</span> fullwidth page</a></li>
+                            <li><a href="404.html"><span>-</span> 404 page</a></li>                           	
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- mainmenu end here -->
+            
+            <!-- top socials start here -->
+            <div id="top-socials">
+                <ul class="socials-list">
+                    <li><a href="#" title="facebook" class="tooltip"><img src="images/socials/facebook.gif" alt="" /></a></li>
+                    <li><a href="#" title="twitter" class="tooltip"><img src="images/socials/twitter.gif" alt="" /></a></li>
+                    <li><a href="#" title="rss" class="tooltip"><img src="images/socials/rss.gif" alt="" /></a></li>
+                    <li><a href="#" title="youtube" class="tooltip"><img src="images/socials/youtube.gif" alt="" /></a></li>
+                </ul>
+            </div>
+            <!-- top socials end here -->
+        </div>             
+    </header>
+    <!-- header end here -->
+    
+    <!-- pagetitle start here -->
+	<section id="pagetitle-wrapper">
+    	<div class="row">
+        	<div class="twelve columns">
+            	<h3>Our services.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+            </div>
+            <div class="twelve columns">
+            	<div id="breadcrumb">
+                	<ul>
+                        <li><a href="index.html"><img src="images/breadcrumb_home.png" alt="" /></a></li>
+                        <li class="current-page"><a href="#">services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>           
+    </section>
+    <!-- pagetitle end here -->
+    
+    <!-- content section start here -->
+    <section id="content-wrapper">
+    
+        <div class="row services-content">
+            <div class="six columns mobile-two">
+            	<div class="box-grey">
+                    <img src="images/icons/icon55.png" alt="" class="metro-icon img-left" />
+                    <div class="indent-left">
+                        <h5>Voluptate esse cillum</h5>
+                        <p>Sed quam tellus accumsan amet venenatis eg accumsan tristique magna nam eu mi adipiscingi erat vestibulum sagittis nunc in ligula</p>
+                        <ul class="check">
+                            <li>Exercitan ullamco laboris</li>
+                            <li>Consectetur adipisicing elit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="six columns mobile-two">
+            	<div class="box-grey">
+                    <img src="images/icons/icon26.png" alt="" class="metro-icon img-left" />
+                    <div class="indent-left">
+                        <h5>Tempor cididunt labore</h5>
+                        <p>Sed quam tellus accumsan amet venenatis eg accumsan tristique magna nam eu mi adipiscingi erat vestibulum sagittis nunc in ligula</p>
+                        <ul class="check">
+                            <li>Exercitan ullamco laboris</li>
+                            <li>Consectetur adipisicing elit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="six columns mobile-two">
+            	<div class="box-grey">
+                    <img src="images/icons/icon34.png" alt="" class="metro-icon img-left" />
+                    <div class="indent-left">
+                        <h5>Excepter sint occaecat</h5>
+                        <p>Sed quam tellus accumsan amet venenatis eg accumsan tristique magna nam eu mi adipiscingi erat vestibulum sagittis nunc in ligula</p>
+                        <ul class="check">
+                            <li>Exercitan ullamco laboris</li>
+                            <li>Consectetur adipisicing elit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="six columns mobile-two">
+            	<div class="box-grey">
+                    <img src="images/icons/icon14.png" alt="" class="metro-icon img-left" />
+                    <div class="indent-left">
+                        <h5>Corporis nisir aliquid</h5>
+                        <p>Sed quam tellus accumsan amet venenatis eg accumsan tristique magna nam eu mi adipiscingi erat vestibulum sagittis nunc in ligula</p>
+                        <ul class="check">
+                            <li>Exercitan ullamco laboris</li>
+                            <li>Consectetur adipisicing elit</li>
+                        </ul>
+                    </div>
+                </div>	
+            </div>
+            
+            <div class="six columns">
+            	<h5>Recent Project</h5>
+                <div class="carousel-content">
+                    <ul class="slides">
+                        <li><div class="link-zoom">
+                            <a class="fancybox" href="images/portfolio_big/pf-big.jpg" title="Aeolus - Corporate Business Responsive">
+                                <img src="images/sample_images/carousel1.jpg" alt="" class="fade" />
+                            </a>                    
+                        </div></li>                     
+                        <li><div class="link-zoom">
+                            <a class="fancybox" href="images/portfolio_big/pf-big.jpg" title="Aeolus - Corporate Business Responsive">
+                                <img src="images/sample_images/carousel2.jpg" alt="" class="fade" />
+                            </a>                    
+                        </div></li>
+                        <li><div class="link-zoom">
+                            <a class="fancybox" href="images/portfolio_big/pf-big.jpg" title="Aeolus - Corporate Business Responsive">
+                                <img src="images/sample_images/carousel3.jpg" alt="" class="fade" />
+                            </a>                    
+                        </div></li>
+                        <li><div class="link-zoom">
+                            <a class="fancybox" href="images/portfolio_big/pf-big.jpg" title="Aeolus - Corporate Business Responsive">
+                                <img src="images/sample_images/carousel1.jpg" alt="" class="fade" />
+                            </a>                    
+                        </div></li>
+                        
+                        <li><div class="link-zoom">
+                            <a class="fancybox" href="images/portfolio_big/pf-big.jpg" title="Aeolus - Corporate Business Responsive">
+                                <img src="images/sample_images/carousel2.jpg" alt="" class="fade" />
+                            </a>                    
+                        </div></li>                    
+                        <li><div class="link-zoom">
+                            <a class="fancybox" href="images/portfolio_big/pf-big.jpg" title="Aeolus - Corporate Business Responsive">
+                                <img src="images/sample_images/carousel3.jpg" alt="" class="fade" />
+                            </a>                    
+                        </div></li>                        
+                    </ul>
+                </div>
+            </div>
+            <div class="six columns">
+            	<ul class="tabs">
+                    <li><a href="#tab-sample1">Some of text 1</a></li>
+                    <li><a href="#tab-sample2">Some of text 2</a></li>
+                    <li><a href="#tab-sample3">Some of text 3</a></li>                 
+                </ul>
+                <div class="tab_container">
+                    <div id="tab-sample1" class="tab_content">                            
+                        <p>Lorem ipsum dolor amet, consectetur adipite scinelit vestibulum vel quam sitare amet odio ultricies dapbus acervitae augue duis nullanunc dignissim ullamcorper minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi aliquid commodi consequatur</p>                                   
+                    </div>
+                                                        
+                    <div id="tab-sample2" class="tab_content">                            
+                        <p>Lorem ipsum dolor amet, consectetur adipite scinelit vestibulum vel quam sitare amet odio ultricies dapbus acervitae augue duis nullanunc dignissim ullamcorper minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi aliquid commodi consequatur</p>                                        
+                    </div>
+                                                        
+                    <div id="tab-sample3" class="tab_content">                            
+                        <p>Lorem ipsum dolor amet, consectetur adipite scinelit vestibulum vel quam sitare amet odio ultricies dapbus acervitae augue duis nullanunc dignissim ullamcorper minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi aliquid commodi consequatur</p>                                      
+                    </div>                                                                  
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="twelve columns ipadtop-margin">
+                <div class="featured-box">
+                    <div class="nine columns">
+                        <h4>Aeolus is Clean, Minimal, and Simple theme to meet your needs</h4>
+                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.</p>
+                    </div>
+                    <div class="three columns">
+                        <a href="#" class="button large blue">Get a Quote</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>  
+
+    </section>
+    <!-- content section end here -->
+    
+    <section id="bottom-wrap">
+    	<div class="row">
+        	<div class="twelve columns text-center">
+            	<img src="images/twitter-icon.png" alt="" />
+                <!-- Begin of Twitter Box -->
+                <ul id="twitter"></ul>
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+                    $.getJSON('twitter.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=Indoneztheme&count=1'), function(tweets){
+                        $("#twitter").html(tz_format_twitter(tweets));
+                    }); });
+                </script>
+                <!-- End of Twitter Box -->
+            </div>
+        </div>
+    </section>
+        
+    <!-- footer start here -->
+    <footer>
+    	<div class="row">
+        	<div class="two columns mobile-two">
+                <ul class="footer-list">
+                	<li><a href="#">Developers</a></li>
+                    <li><a href="#">Publisher</a></li>
+                    <li><a href="#">Advertisers</a></li>
+                    <li><a href="#">Internal</a></li>
+                </ul>
+            </div>
+            <div class="two columns mobile-two">
+                <ul class="footer-list no-border">
+                	<li><a href="#">About Us</a></li>
+                    <li><a href="#">Environment</a></li>
+                    <li><a href="#">Jobs (Hiring!)</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>             
+            </div>
+            <div class="two columns mobile-two">
+             	<ul class="footer-list">
+                	<li><a href="#">Press Kit</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Legal</a></li>
+                </ul>   
+            </div>
+            <div class="three columns mobile-two">
+             	<ul class="footer-list-address">
+                	<li><p>Cost Avenue. Silver Spring<br/>Jacko City, MD 20910, Indonesia</p></li>
+                    <li><p>Phone : (111) 234 5678</p></li>
+                </ul>   
+            </div>
+            <div class="three columns">
+            	<div class="copyright">
+                    <div class="g-plusone" data-annotation="none" data-width="300"></div><script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+                    <p>&copy; Copyright 2012 Aeolus Design<br/>All Rights Reserved</p>
+                </div>
+            </div>	
+        </div>
+    </footer>
+    <!-- footer end here -->
+
+</div>
+
+<script>$('#noscript').remove();</script>
+</body>
+</html>
