@@ -2,6 +2,10 @@
   width: 1150px;
 }
 
+#slideshow-noscript {
+  background-size: cover;
+}
+
 @media only screen and (min-width: 1290px) {
   #main-wrapper,
   #content-wrapper {
