@@ -134,6 +134,10 @@ h1.nav-logo {
     bottom: 35px !important;
     margin-left: 0;
   }
+
+  .home-members {
+    padding-top: 55px !important;
+  }
 }
 
 .row.homepage-steps {
