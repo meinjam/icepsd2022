@@ -63,7 +63,7 @@ body {
   }
 
   #top-socials {
-    width:11%;
+    width: 11%;
   }
 
   /* #mainmenu {
@@ -201,12 +201,12 @@ h1.nav-logo {
 .home-members a.more-btn.btn,
 .home-members a.more-btn:visited {
   color: #898989;
+  font-weight: bold;
 }
 
 .home-members .box-grey {
   padding: 15px 15px 15px 15px;
   background-color: initial;
-  border: 1px solid #f4f4f4;
 }
 
 .home-members .box-grey h5 {
@@ -256,17 +256,17 @@ h1.nav-logo {
 
   .memb .columns:first-child {
     padding-left: 0;
-    padding-right: 5px;
+    padding-right: 0;
   }
 
   .memb .columns:last-child {
     padding-right: 0;
-    padding-left: 5px;
+    padding-left: 0;
   }
 
   .memb .columns:nth-child(2) {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .about .two.columns {
@@ -285,6 +285,15 @@ h1.nav-logo {
     padding-right: 0;
   }
 
+  .home-members .box-grey {
+    border: 1px solid #f4f4f4;
+  }
+
+  .memb .columns:nth-child(2) .box-grey {
+    border-right: none;
+    border-left: none;
+  }
+
   /* footer .columns:first-child {
     padding-left: 0;
   }
@@ -292,12 +301,4 @@ h1.nav-logo {
   footer .columns:last-child {
     padding-right: 0;
   } */
-
-  /* .columns:first-child {
-    padding-left: 0;
-  }
-
-  .columns:last-child {
-    padding-right: 0;
-  } */;
 }
